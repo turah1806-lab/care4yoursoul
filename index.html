@@ -1,1 +1,143 @@
-[file-tag: code-generated-file-2-1779217961080597349]   
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Care4yoursoul | Accessible & Affordable Skincare</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <header class="main-header">
+        <div class="header-container">
+            <h1 class="logo">Care<span>4</span>yoursoul</h1>
+            <nav class="nav-links">
+                <a href="#routine-builder" class="active">Routine Builder</a>
+                <a href="#knowledge-base">Skin Q&A</a>
+                <a href="#shop">Affordable Shop</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="app-container">
+        <!-- Hero Strategy/Context Section -->
+        <section class="intro-section">
+            <div class="badge">Human-Centered Design Preview</div>
+            <h2>Skincare shouldn't cost a fortune or break your skin.</h2>
+            <p>We built this platform for everyone who has struggled with dry patches, oily T-zones, persistent acne, hyperpigmentation, or eczema breakouts while burning through hard-earned cash. Below is your proof-of-concept testing suite.</p>
+            
+            <!-- UX Actor & Scenario Blueprint Card -->
+            <div class="blueprint-card">
+                <h3>📋 UX Architecture Blueprint</h3>
+                <div class="blueprint-grid">
+                    <div class="blueprint-col">
+                        <h4>Target Actor</h4>
+                        <p><strong>The Overwhelmed Budget-Conscious Seeker:</strong> Individuals (ages 16–45) navigating complex, chronic skin issues (eczema, hyperpigmentation, acne) who feel alienated by premium pricing and high-end marketing, seeking a simplified, reliable framework.</p>
+                    </div>
+                    <div class="blueprint-col">
+                        <h4>The Scenario</h4>
+                        <p>An individual experiences a flare-up of combined eczema and adult acne. Frustrated by conflicting online advice and expensive multi-step regimens, they visit Care4yoursoul to find instant answers, build a budget-capped routine, and purchase proven items without financial anxiety.</p>
+                    </div>
+                    <div class="blueprint-col">
+                        <h4>Core System Pillars</h4>
+                        <p><strong>Fast & Effective:</strong> Reduced cognitive overload through minimalist multi-step configurations, instantaneous client-side Q&A filtering, and algorithmic routine generation that optimizes for financial limits.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Module 1: The Interactive Smart Routine Builder -->
+        <section id="routine-builder" class="interactive-section">
+            <div class="section-title-area">
+                <h2>1. Smart Routine & Budget Planner</h2>
+                <p>Select your skin parameters and set your absolute maximum monthly budget. The engine will synthesize an optimized, highly effective routine matching your parameters without exceeding your price threshold.</p>
+            </div>
+
+            <div class="routine-builder-layout">
+                <div class="control-panel">
+                    <form id="routine-form" onsubmit="event.preventDefault();">
+                        <div class="form-group">
+                            <label class="input-label">What is your primary skin concern?</label>
+                            <div class="custom-select-wrapper">
+                                <select id="skin-concern" class="form-control">
+                                    <option value="eczema">Eczema & Extreme Dryness</option>
+                                    <option value="hyperpigmentation">Hyperpigmentation & Dark Spots</option>
+                                    <option value="pimple">Pimples, Acne & Excess Oil</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="input-label">Maximum Affordable Monthly Budget ($)</label>
+                            <div class="budget-slider-container">
+                                <input type="range" id="budget-range" min="15" max="60" value="30" step="5" class="slider">
+                                <div class="slider-labels">
+                                    <span>$15</span>
+                                    <span class="current-budget-badge">$<span id="budget-val">30</span> max</span>
+                                    <span>$60</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button type="button" id="build-routine-btn" class="btn btn-primary">Generate My Routine</button>
+                    </form>
+                </div>
+
+                <div class="output-panel">
+                    <div id="routine-placeholder" class="placeholder-state">
+                        <div class="placeholder-icon">✨</div>
+                        <p>Adjust the parameters and click "Generate My Routine" to render your human-centered accessible skincare regimen matrix.</p>
+                    </div>
+                    
+                    <div id="routine-results" class="results-state hidden">
+                        <div class="results-header">
+                            <h3>Your Custom Accessible Routine</h3>
+                            <div class="total-cost-pill">Total Cost: <strong id="total-routine-cost">$0.00</strong></div>
+                        </div>
+                        <div id="routine-items-grid" class="items-grid">
+                            <!-- Dynamic items injected here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Module 2: Instant Knowledge Base & Search Engine -->
+        <section id="knowledge-base" class="interactive-section">
+            <div class="section-title-area">
+                <h2>2. Instant Skin Wisdom Search</h2>
+                <p>A fast, zero-latency interface engineered to deliver raw, unfiltered answers to pressing skin queries. Type keyword flags like "eczema", "hyperpigmentation", "budget", or "oil" to view instant answers.</p>
+            </div>
+
+            <div class="search-container">
+                <div class="search-input-wrapper">
+                    <span class="search-icon">🔍</span>
+                    <input type="text" id="qa-search-input" placeholder="Type skin concerns or questions (e.g., 'What helps eczema?', 'How to clear dark spots?')..." autocomplete="off">
+                </div>
+            </div>
+
+            <div id="qa-results" class="qa-cards-container">
+                <!-- Dynamic cards injected here -->
+            </div>
+        </section>
+
+        <!-- Module 3: Transparent Product Marketplace -->
+        <section id="shop" class="interactive-section">
+            <div class="section-title-area">
+                <h2>3. The Care4yoursoul Transparent Shop</h2>
+                <p>Every product here is vetted for low-irritant profiles and selected specifically for budget ceilings. No fake markups. Direct-to-skin transparency.</p>
+            </div>
+
+            <div id="shop-catalog" class="shop-grid">
+                <!-- Shop items dynamically injected by JS -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Care4yoursoul. Designed for ultimate structural scalability, performance, and accessibility testing.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
