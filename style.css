@@ -1,24 +1,25 @@
 /* Care4yoursoul - Professional Engineering Stylesheet */
+
 :root {
     /* Harmonized Pink Background Matrix */
-    --bg-main: #ffd1dc; /* Soft Pastel Pink for the main backdrop */
-    --surface-card: #fff0f5; /* Lavender Blush / Very Soft Pink for cards so they blend beautifully */
-    --accent-light: #ffe4e1; /* Misty Rose for subtle badges/highlights */
+    --bg-main: #ffd1dc;        /* Soft Pastel Pink for the main backdrop */
+    --surface-card: #fff0f5;   /* Lavender Blush / Very Soft Pink for cards so they blend beautifully */
+    --accent-light: #ffe4e1;   /* Misty Rose for subtle badges/highlights */
 
     /* High-Contrast Blue Typography Matrix */
-    --text-primary: #0f2b5c; /* Deep Midnight Blue for clear readability */
+    --text-primary: #0f2b5c;   /* Deep Midnight Blue for clear readability */
     --text-secondary: #1a428a; /* Rich Royal Blue for secondary text and descriptions */
     --accent-primary: #0056b3; /* Vibrant Blue for links, badges, and prominent buttons */
     --accent-hover: #003d80;
 
     /* Border & Structural Variables */
-    --border-color: #f0c2cd; /* Rose-tinted borders to cleanly separate elements */
-    --price-color: #0f2b5c; /* Blue price colors to match the theme */
+    --border-color: #f0c2cd;   /* Rose-tinted borders to cleanly separate elements */
+    --price-color: #0f2b5c;    /* Blue price colors to match the theme */
     --shadow-sm: 0 4px 12px rgba(15, 43, 92, 0.08);
     --shadow-md: 0 8px 24px rgba(15, 43, 92, 0.12);
 
-    /* Playful & Approachable Typography Stack - Optimized for Warmth */
-    --font-stack: "Quicksand", "Comfortaa", "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    /* Playful & Approachable Typography Stack */
+    --font-stack: "Comfortaa", "Quicksand", "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
 body {
@@ -34,8 +35,8 @@ body {
 
 .nav-links a {
     text-decoration: none;
-    color: var(--text-secondary); /* Now maps to the rich blue */
-    font-weight: 600; /* Slightly boosted weight for better visibility on pink */
+    color: var(--text-secondary); /* Maps to the rich blue */
+    font-weight: 600;             /* Slightly boosted weight for better visibility on pink */
     font-size: 14px;
     margin-left: 25px;
     padding: 6px 0;
